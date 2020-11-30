@@ -93,4 +93,15 @@ function printSome(begin , end){
     return string + ' \n' + 'Sum: ' + sum
 }
 
-console.log(printSome(0,26))
+function printTriangle(num) {
+    let output = '';
+    for (let i = 1; i <= num; i++) {
+        for (let y = 0; y < i; y++) {
+            output += i + ' ';
+        }
+        output += '\n';
+    }
+    return output.trim();
+}
+
+console.log(printTriangle(5));
