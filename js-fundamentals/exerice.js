@@ -71,5 +71,12 @@ function exerice04(groupSize, type, day) {
 
 }
 
-
-console.log(exerice04(30, 'Students', 'Sunday'));
+function isYearLeap(year) {
+    if (year % 400 === 0) {
+        return 'yes'
+    } else if (year % 4 === 0 && year % 100 !== 0) {
+        return 'yes'
+    } else {
+        return 'no'
+    }
+}
