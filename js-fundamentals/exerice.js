@@ -1,4 +1,4 @@
-function solve(num , presision){
+function randomCut(num , presision){
 if(presision > 15){
     presision = 15;
 }
@@ -24,5 +24,3 @@ function divider(num){
     }
     return 'The number is divisible by '.concat(divider)
 }
-
-console.log(divider(1643));
