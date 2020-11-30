@@ -104,4 +104,17 @@ function printTriangle(num) {
     return output.trim();
 }
 
-console.log(printTriangle(5));
+function loginUser(input) {
+    let username = input[0];
+
+    let reversedUsername = username.split("").reverse().join("");
+
+    for (let i = 0; i < input.length; i++) {
+        if(input[i] === reversedUsername){
+            console.log('User ' + username + ' logged in.')
+            break;
+        }else{
+            console.log('Incorrect password. Try again.');
+        }
+    }
+}
