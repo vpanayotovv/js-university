@@ -80,3 +80,17 @@ function isYearLeap(year) {
         return 'no'
     }
 }
+
+function printSome(begin , end){
+    let string = '';
+    let sum = 0;
+
+    for (let i = begin; i <= end ; i++) {
+        string += i+' ';
+        sum += i
+    }
+
+    return string + ' \n' + 'Sum: ' + sum
+}
+
+console.log(printSome(0,26))
