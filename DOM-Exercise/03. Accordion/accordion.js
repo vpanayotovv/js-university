@@ -5,7 +5,7 @@ function toggle() {
         div.style.display = 'block';
         button.innerHTML = 'Less';
     }else{
-        div.style.display = '';
+        div.style.display = 'none';
         button.innerHTML = 'More'
     }
 }
