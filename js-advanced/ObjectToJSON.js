@@ -9,10 +9,8 @@ function  solve(input) {
     html += '<table>\n';
 
     html += `<tr>\n${Object.keys(first).map(x => `<th>${x}</th>\n`).join("")}</tr>\n`
-
     html += `<tr>\n${Object.values(first).map(x => `<td>${x}</td>\n`).join('')}</tr>\n`
     html += `<tr>\n${Object.values(second).map(x => `<td>${x}</td>\n`).join('')}</tr>\n`
-
 
     html += '</table>\n';
     console.log(html);
