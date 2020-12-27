@@ -14,7 +14,7 @@ function makingJuice(input){
     let bottles = {};
     input.forEach(element => {
         let [ name , quantity ] =  element.split(' => ');
-        quantity = Number(quantity);s
+        quantity = Number(quantity);
         if(!juices.hasOwnProperty(name)){
             juices[name] = 0;
         }
