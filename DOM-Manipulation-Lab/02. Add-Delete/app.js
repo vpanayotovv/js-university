@@ -5,7 +5,11 @@ function addItem() {
 
     let liElement = document.createElement('li');
     let spanElement = document.createElement('span');
-    spanElement.innerText = '[Delete]'
+
+    spanElement.innerText = ' [Delete]';
+    spanElement.style.cursor = 'pointer';
+    spanElement.style.color = 'red';
+
     spanElement.addEventListener('click',function deleteElement(event) {
         let parentElement = event.target.parentElement;
         parentElement.remove();
