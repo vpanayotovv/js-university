@@ -21,13 +21,15 @@ function solve(descrioptor) {
         }
     }
 
-    if (descrioptor.wheelsize % 2 == 0) {
-        const wheelsize = descrioptor.wheelsize - 1;
-        car.wheels = [wheelsize, wheelsize, wheelsize, wheelsize];
-    } else {
-        const wheelsize = descrioptor.wheelsize;
-        car.wheels = [wheelsize, wheelsize, wheelsize, wheelsize];
-    }
+    // if (descrioptor.wheelsize % 2 == 0) {
+    //     const wheelsize = descrioptor.wheelsize - 1;
+    //     car.wheels = [wheelsize, wheelsize, wheelsize, wheelsize];
+    // } else {
+    //     const wheelsize = descrioptor.wheelsize;
+    //     car.wheels = [wheelsize, wheelsize, wheelsize, wheelsize];
+    // }
+
+    car.wheels = (new Array(4)).fill(descrioptor.wheelsize % 2 ? descrioptor.wheelsize : descrioptor.wheelsize - 1)
 
     return car;
 }
