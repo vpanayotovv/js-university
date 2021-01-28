@@ -11,6 +11,7 @@ function solve() {
         
 
         function fight(){
+            this.stamina--;
             console.log(`${this.name} slashes at the foe!`)
         }
 
@@ -28,6 +29,7 @@ function solve() {
         
 
         function cast(spell){
+            this.mana--;
             console.log(`${this.name} cast ${spell}`)
         }
 
