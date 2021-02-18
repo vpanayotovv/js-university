@@ -54,4 +54,5 @@ function solve() {
       addButtonTomatoes.removeEventListener('click', addTomatoes);
       checkoutButton.removeEventListener('click', addListOfProducts)
    }
+   
 }
